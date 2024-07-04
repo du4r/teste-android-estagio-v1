@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_bottom_home"
+        android:icon="@drawable/baseline_directions_bus_24"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/menu_bottom_search"
+        android:icon="@drawable/baseline_search_24"
+        android:title="@string/search"/>
+
+    <item android:id="@+id/menu_stoppages"
+        android:icon="@drawable/round_airline_stops_24"
+        android:title="@string/timer"/>
+
+    <item android:id="@+id/menu_bottom_timer"
+        android:icon="@drawable/baseline_av_timer_24"
+        android:title="@string/timer"/>
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/filter_btn_coming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_filter_list_24"
+        app:layout_constraintTop_toTopOf="@id/search_input_layout"
+        app:layout_constraintBottom_toBottomOf="@id/search_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_edit_text_coming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/search_btn_coming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_search_24"
+        app:layout_constraintTop_toTopOf="@id/search_input_layout"
+        app:layout_constraintBottom_toBottomOf="@id/search_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_input_layout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/coming_line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Nome da Linha" />
+
+        <TextView
+            android:id="@+id/coming_line_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Código da Linha" />
+
+        <TextView
+            android:id="@+id/coming_line_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Previsao de chegada" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
